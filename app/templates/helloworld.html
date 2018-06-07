@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome to my helloworld!</title>
+</head>
+<body>
+    {% if index %}
+        <h1>the index is {{index}}</h1>
+    {% else %}
+        <h1>hello {{user.name}}</h1>
+    {% endif %}
+
+
+    {% for posts in posts %}
+    <p>the author is {{posts.author}},and the body is {{posts.body}}</p>
+    {% endfor %}
+</body>
+</html>
+
