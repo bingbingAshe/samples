@@ -1,3 +1,5 @@
 from flask import Flask
 app = Flask(__name__)
-from app.views import helloworld
+app.config.from_object('config')
+from app.views import helloworld,login
+
